@@ -1,0 +1,205 @@
+
+              ####### Java Script ########
+
+
+// Hoisting//
+var a;  //Declaration it will move to the top
+console.log(a); // Initialization
+a = 12;
+
+Demo:
+var a;
+console.log(a);
+a=12;
+=> Any veriable that don't have value it's default value is undefined
+
+consol.log(b);
+// It give NotDefides bcs value dosn't exist
+
+
+
+
+//Primitive and reference
+
+⇒ Primitive = number, string, null, undefined, boolean
+⇒   reference = [] {} ()
+    ⇒ Asis koi bhi value jisko copy karna par real copy nahi hota,
+     balki us main value ka refrence pass hojaata haim usa hum refrence
+      value kahte hai, aur jiska copy karne par real copy ho jaaye wo value
+      Primitive type hoti hai
+
+      Example :-
+      Primitive : var a = 12; withot brackets
+      Reference : var a = [12 , 13]; with brackets
+
+
+//Conditionals Statement : if, else, else-if
+        Example: id
+         if(12>8){
+            console.log("Hellow")
+        }
+        else{
+            console.log('Bye')
+        }
+
+        var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+
+  case 1:
+    day = "Monday";
+    break;
+
+  case 2:
+    day = "Tuesday";
+    break;
+
+  case 3:
+    day = "Wednesday";
+    break;
+
+  case 4:
+    day = "Thursday";
+    break;
+
+  case 5:
+    day = "Friday";
+    break;
+
+  case 6:
+    day = "Saturdat";
+    break;
+
+  default:
+    text = "Looking forward to the Weekend";
+}
+
+document.getElementById("demo").innerHTML = "Today is: " + day;
+
+console.log(day);
+
+
+          //  loops   //
+
+// for loop
+// while loop
+⇒ loop means to do reapeatative things
+ Example:
+
+const num = [1, 2, 3, 5, 6];
+let text = " ";
+for(let i = 0 ; i<=4; i++){
+//    console.log("Hello World");
+   text += num[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text ;
+console.log(i);
+
+    //  while loop
+let i = 0;
+while(i < 10){
+    console.log(i);
+    i++;
+}
+
+   //do while
+
+ let i = 0;
+ do{
+    console.log(i);
+    i++;
+ }while(i > 5);
+
+
+        // Functions //
+
+⇒Functions ka matlab app kuchh code ko likh kar koi naam da sakte
+⇒Functions a mainly used ni three workd
+1) Jab aapka code app turant nahi chalana chaahte future main
+   chalaana chaahte ho
+
+2)jab aapka code reuse karan chaateh ho
+3)jab aap code chalana chaahte ho har baar with diffrent data
+
+Arguments :> The real value we give it call arguments{(modulo(2, 5));}
+Paremeters :> The values which we pass throw arguments, the paremeters are hoalding it {mul (a , b)}
+
+  Example:
+            function mul (a , b){
+            return a * b;
+            }
+            function add (a , b){
+                return a + b;
+            }
+            function sub (a , b){
+                return a - b;
+            }
+            function div (a , b){
+                return a / b;
+            }
+            function modulo (a , b){
+                return a % b;
+            }
+
+
+// calling function   console.log(modulo(2, 5));
+
+
+               // Array //
+
+//Array :> Hum ek variable mein ek value store kar paata hai par
+    jab humein ek sa jaada value store karni ho tab fir use hota hai
+    array ka, matlab ki array aapko freedom deta hai ek sa jaada value use
+    karna ki
+    :> Arrays a group of values
+// push pop shift unshift
+⇒ Push(): to push value in ending
+⇒ pop(): to remove value in ending
+⇒ shift(): to remove value in Starting
+⇒ unshift(): to Add value in Starting
+⇒ splice(): It will remove elements from the range we give
+          :> splice(1,2)
+
+         //Objecs//
+
+//Jaab ek sa jaada values ki baat ki to hua array, ek value ke baare main
+saari baat ki to hua object
+
+// object hai ek value ki details ko hold karna, in a key value pair
+
+1) Blank object (obj)
+
+=> var a = {};
+-->This is a blank object in javascript.
+
+2) Filled object (obj)
+	// Properties
+--> var a = {
+  name:"jainish", age:"20",hometown:"Songadh"
+};
+
+
+// Properties //
+
+car.name = Fiat
+
+car.model = 500
+
+car.weight = 850kg
+
+car.color = white
+
+// Methods //
+
+car.start()
+
+car.drive()
+
+car.brake()
+
+car.stop()
+
+--> Kuch aise property jo function ha use method kahata hai.
